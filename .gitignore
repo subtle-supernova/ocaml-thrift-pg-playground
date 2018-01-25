@@ -1,0 +1,8 @@
+gen-ocaml
+setup.data
+_tags
+myocamlbuild.ml
+setup.ml
+*.opam
+Makefile
+configure

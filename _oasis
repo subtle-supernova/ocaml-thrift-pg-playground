@@ -1,0 +1,19 @@
+OASISFormat: 0.4
+Name:        streamcr
+Version:     1.0.0-alpha.1
+Synopsis:    hi
+Authors:     Jeremy Sullivan <suddenlysullivan@gmail.com>
+License:     PROP
+Plugins:     META (0.4), DevFiles (0.4)
+Executable streamcr
+  Path:           src
+  BuildTools:     ocamlbuild
+  MainIs:         hello_world.ml
+  BuildDepends:   thrift, threads, service_thrift, postgresql, batteries
+  CompiledObject: native
+Library audio_thrift
+  Path:            gen-ocaml
+  BuildTools:      ocamlbuild
+  Modules:         Service, Service_consts, Service_types
+  BuildDepends:    thrift, threads
+  XMETARequires:   threads

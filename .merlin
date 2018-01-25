@@ -1,0 +1,15 @@
+B _build/default
+B _build/default/gen-ocaml
+FLG -w -40
+PKG batteries
+PKG bigarray
+PKG bytes
+PKG num
+PKG num.core
+PKG postgresql
+PKG str
+PKG threads
+PKG threads.posix
+PKG thrift
+PKG unix
+S gen-ocaml
